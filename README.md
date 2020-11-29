@@ -9,8 +9,6 @@ This is a guide to clone and provision a nodeJS sample app.
 4. Starter code
 
 
-
-
 ## Steps
 1. Clone the starter code.
 2. Configure the Vagrantfile to provision a private network and assign aliases:
