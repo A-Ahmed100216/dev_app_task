@@ -20,7 +20,8 @@ config.hostsupdater.aliases = ["development.local"]`
 
 4. Create a bash script to run commands to install relevant files. This will be titled provision.sh
 5. Within the provision.sh file, write out the commands which will install the required files.
-`#!/bin/bash
+```bash
+#!/bin/bash
 
 sudo apt-get update
 sudo apt-get upgrade
@@ -28,9 +29,8 @@ sudo apt-get install nginx -y
 sudo apt-get install nodejs -y
 sudo apt-get install npm -y
 sudo npm install pm2
-`
-6. Configure the Vagrantfile to execute the provision.sh file. Use the following code
-` config.vm.provision "shell",path: "environment/provision.sh"`
+```
+6. Configure the Vagrantfile to execute the provision.sh file. Use the following code `config.vm.provision "shell",path: "environment/provision.sh"`.  
 7. Run the command `vagrant up` to get the virtual machine running.
 8. Confirm the virtual machine is running using VirtualBox.
 9. Login to the virtual machine using `vagrant ssh`
